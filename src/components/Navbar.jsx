@@ -89,7 +89,7 @@ function Navbar() {
                 {/* Mobile Navigation Menu */}
                 {nav && <div 
                     onClick={showNavbar}
-                    className="block md:hidden min-h-screen bg-black/20 min-w-[100%]"
+                    className="block md:hidden min-h-screen bg-gradient-to-b from-transparent to-black/50 min-w-[100%]"
                 >
                 </div>}
                 <ul className={`fixed inset-x-0 top-[5rem] mx-auto w-[90%] bg-white py-5 rounded z-10 md:hidden transition-transform duration-700 ease-in-out 
