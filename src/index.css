@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+main {
+  background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -8.5rem right -8.5rem, top 31rem right -8rem;
+  background-size: 120%, 70%;
+}
+
+.simplifySection {
+  background-image: url('/images/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
+    background-position: top -10rem right -7rem, top 40rem left -25rem;
+    background-size: 90%, 70%;
+  }
+
+  .simplifySection {
+    background-image: url('/images/bg-simplify-section-desktop.svg');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
+    background-position: top -12rem right -12rem, top 63rem left -29rem;
+    background-size: 60%, 60%;
+  }
+
+  .simplifySection {
+    background-image: url('/images/bg-simplify-section-desktop.svg');
+    background-size: cover;
+    background-position: bottom 0rem left 13rem;
+  }
+}
