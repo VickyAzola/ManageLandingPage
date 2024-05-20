@@ -34,15 +34,13 @@ function CarouselMobile() {
 
     return (
         <>
-        <div className="flex flex-col items-center" aria-roledescription="carousel" aria-label="Testimonials">
+        <div className="flex flex-col items-center">
             {carousel.map((item, index) => (
                 <div 
                     key={index} 
                     className={`flex flex-col items-center bg-VaryLightGray px-8 
                         ${index === current ? 'block' : 'hidden'}`} 
                     role="group" 
-                    aria-roledescription="slide" 
-                    aria-label={`Slide ${index + 1} of ${carousel.length}`}
                 >
                     <img
                         src={item.img}
@@ -60,7 +58,7 @@ function CarouselMobile() {
             ))}
 
             {/* Navigation buttons */}
-            <div className='mt-4 space-x-1.5' role="tablist" aria-label="Carousel navigation">
+            <div className='mt-4 space-x-1.5' role="tablist">
                 {carruselBtn.map((item, index) => (
                     <button
                         onClick={() => handleClick(index)}
