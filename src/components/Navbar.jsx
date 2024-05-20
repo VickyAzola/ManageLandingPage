@@ -57,7 +57,6 @@ function Navbar() {
                         onClick={showNavbar}
                         className='absolute z-20 right-8 top-8 ease-in duration-700 md:relative block md:hidden'
                         aria-expanded={nav}
-                        aria-controls="mobileMenu"
                         aria-label={nav ? "Close Navigation" : "Open Navigation"}
                     >
                         {nav
