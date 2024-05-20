@@ -15,7 +15,7 @@ function CarouselDesktop() {
     }, [carousel.length]);
 
     return (
-        <div className="overflow-hidden pt-10" aria-roledescription="carousel">
+        <div className="overflow-hidden pt-10">
             <div className="flex w-full gap-x-4 xl:gap-x-11 transition-transform duration-700 ease-in-out"
                  style={{ transform: `translateX(-${current * (100 / 3)}%)` }}>
                     
