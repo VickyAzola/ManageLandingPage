@@ -21,7 +21,7 @@ function CarouselDesktop() {
                     
                 {carousel.concat(carousel.slice(0, 2)).map((item, index) => (
                     <div key={index} className="flex-shrink-0 lg:w-[50%] xl:w-[30%]  flex flex-col items-center bg-VaryLightGray px-8"
-                        role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${carousel.length}`}>
+                        role="group">
                         <img 
                             src={item.img} 
                             alt={`${item.name} avatar`} 
