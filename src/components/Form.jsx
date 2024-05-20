@@ -25,7 +25,7 @@ function Form() {
 
     return (
         <>
-            <form onSubmit={handleSubmit} aria-describedby="email-error" className="flex items-start gap-x-1" >
+            <form onSubmit={handleSubmit} className="flex items-start gap-x-1" >
                 <div className="w-full">
                     <label htmlFor="email" className="sr-only">Email</label>
                     <input
@@ -40,10 +40,9 @@ function Form() {
                         }
                         required
                         aria-invalid={errorMsg ? "true" : "false"}
-                        aria-describedby="email-error"
                     />
                     {errorMsg &&
-                        <p id="email-error" role="alert" className="text-red-500 text-xs italic text-left py-1" >
+                        <p role="alert" className="text-red-500 text-xs italic text-left py-1" >
                             Please insert a valid email
                         </p>
                     }
