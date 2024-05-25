@@ -17,7 +17,8 @@ function App() {
 
     <main className="pt-28 md:pt-32 lg:pt-44">
 
-      <section className='px-8 md:px-20 lg:px-32 flex flex-col items-center text-center lg:text-left lg:grid lg:grid-cols-2'>
+    <div className='max-w-[90rem] mx-auto'>
+    <section className='px-8 md:px-20 lg:px-32 flex flex-col items-center text-center lg:text-left lg:grid lg:grid-cols-2'>
         <img className='lg:order-last' src="/images/illustration-intro.svg" alt="Illustration of teamwork"/>
         <div className='lg:max-w-md lg:mr-8'>
           <h1 className='font-bold text-4xl lg:text-5xl my-3 lg:mt-0 lg:mb-6 text-DarkBlue'>Bring everyone together to build better products.</h1>
@@ -59,20 +60,24 @@ function App() {
           variant="orange"
         />
       </section>
+    </div>
 
-      <section className='simplifySection bg-BrightRed py-24 px-10 md:px-36 lg:px-32 flex flex-col items-center text-center
-      lg:flex-row lg:justify-between lg:py-14 lg:text-left'>
-        <h5 className='font-semibold text-4xl mb-7 text-white lg:max-w-md'>Simplify how your team works today.</h5>
-        <Button 
-          textButton="Get Started"
-          variant="white"
-        />
+      <section className='simplifySection bg-BrightRed'>
+        <div className='w-full max-w-[90rem] mx-auto py-24 px-10 md:px-36 lg:px-32 flex flex-col items-center text-center lg:flex-row lg:justify-between lg:py-14 lg:text-left'>
+          <h5 className='font-semibold text-4xl mb-7 text-white lg:max-w-md'>Simplify how your team works today.</h5>
+          <Button 
+            textButton="Get Started"
+            variant="white"
+          />
+        </div>
       </section>
     </main>
 
-    <footer className='bg-VeryDarkBlue pt-10 pb-6 px-8 md:px-40 lg:px-32 lg:pt-16 lg:pb-6'>
-      <Footer />
-      <Credits />
+    <footer className='bg-VeryDarkBlue'>
+      <div className='max-w-[90rem] mx-auto pt-10 pb-6 px-8 md:px-40 lg:px-32 lg:pt-16 lg:pb-6'>
+        <Footer />
+        <Credits />
+      </div>
     </footer>
     </>
   )

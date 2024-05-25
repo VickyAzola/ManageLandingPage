@@ -1,7 +1,9 @@
 function Social() {
     return (
         <>
-            <div className='flex items-center justify-between px-2 lg:px-0 lg:gap-x-3' >
+            <div className='flex items-center justify-between px-2 lg:px-0 lg:gap-x-3' 
+                aria-label="Social Media Links"
+            >
                 <a 
                     href="#" 
                     aria-label="Go to our Facebook" 

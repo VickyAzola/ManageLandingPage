@@ -44,10 +44,11 @@ function Navbar() {
     return (
         <>
             <nav id="topNav" aria-label="Top Navigation"
-                className={`flex fixed z-30 w-full font-semibold text-xl text-DarkBlue md:text-sm md:px-12 md:pt-4 lg:pt-6
-                ${scrolled ? 'bg-white max-h-20 lg:h-auto' : 'bg-transparent'} transition-colors duration-500 lg:px-32 lg:justify-between lg:items-center`}
+                className={`fixed z-30 w-full font-semibold text-xl text-DarkBlue md:text-sm md:px-12 lg:px-32 md:pt-4 lg:pt-6
+                ${scrolled ? 'bg-white ' : 'bg-transparent'} transition-colors duration-500 `}
             >
 
+            <div className="flex max-w-[80rem] mx-auto lg:justify-between lg:items-center">
                 {/* Logo, Hamburger and Close mobile */}
                 <div className='flex justify-between items-center w-full md:w-auto h-20'>
                     <a href='#' className="absolute w-24 lg:w-32 z-20 top-9 left-8 md:relative md:inset-0" aria-label='Home'>
@@ -57,6 +58,7 @@ function Navbar() {
                         onClick={showNavbar}
                         className='absolute z-20 right-8 top-8 ease-in duration-700 md:relative block md:hidden'
                         aria-expanded={nav}
+                        aria-controls="mobileMenu"
                         aria-label={nav ? "Close Navigation" : "Open Navigation"}
                     >
                         {nav
@@ -84,6 +86,7 @@ function Navbar() {
                             variant="orange"
                         />
                 </div>
+            </div>
 
                 {/* Mobile Navigation Menu */}
                 {nav && <div 

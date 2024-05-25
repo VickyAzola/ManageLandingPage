@@ -4,9 +4,6 @@
 
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
-}
-
-main {
   background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: top -8.5rem right -8.5rem, top 31rem right -8rem;
@@ -18,8 +15,8 @@ main {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 768px) {
-  main {
+@media screen and (min-width: 700px) {
+  body {
     background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
     background-position: top -10rem right -7rem, top 40rem left -25rem;
     background-size: 90%, 70%;
@@ -32,7 +29,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  main {
+  body {
     background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
     background-position: top -12rem right -12rem, top 63rem left -29rem;
     background-size: 60%, 60%;
@@ -42,5 +39,13 @@ main {
     background-image: url('/images/bg-simplify-section-desktop.svg');
     background-size: cover;
     background-position: bottom 0rem left 13rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
+    background-position: top -16rem right -14rem, top 65rem left -33rem;
+    background-size: 55%, 55%;
   }
 }
